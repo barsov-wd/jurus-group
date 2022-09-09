@@ -1,0 +1,50 @@
+.header {
+    &__inner {
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__social-link {
+        margin-left: 19px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    &__phone-link {
+        position: relative;
+        font-family: 'Gilroy Bold', sans-serif;
+        font-size: 24px;
+        line-height: 29px;
+        color: #215EAB;
+        padding-left: 37px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 29px;
+            height: 29px;
+            background: url('../icons/header/icon-phone.svg') center no-repeat;
+        }
+    }
+    &__nav {
+        padding: 14px 0;
+        background: rgba(#215EAB, .8);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &__menu {
+        width: 480px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    &__menu-item {
+        color: #fff;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: 'Raleway Extra Bold', sans-serif;
+        font-weight: 800;
+    }
+}

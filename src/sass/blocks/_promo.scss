@@ -1,0 +1,117 @@
+.promo {
+    position: relative;
+    padding-top: 29px;
+    min-height: 663px;
+    background: #F0F4FB url('../img/promo/promo-bg.png') center no-repeat;
+    text-align: center;
+    z-index: 3;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 682px;
+        height: 332px;
+        background: url('../img/promo/promo-image-before.png') no-repeat;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 1107px;
+        height: 591px;
+        background: url('../img/promo/promo-image-after.png') no-repeat;
+        z-index: -1;
+    }
+    &__text {
+        font-size: 20px;
+        line-height: 24px;
+        color: #215EAB;
+        font-weight: 800;
+        margin-bottom: 55px;
+    }
+    &__title {
+        font-size: 55px;
+        line-height: 61px;
+        color: #072E52;
+        font-family: 'Gilroy Black', sans-serif;
+        max-width: 855px;
+        width: 100%;
+        margin: 0 auto 20px;
+        &--ttu {
+            text-transform: uppercase;
+            display: block;
+            margin: 0;
+        }
+    }
+    &__descr {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        color: #072E52;
+        margin-bottom: 19px;
+    }
+    &__button {
+        width: 294px;
+        height: 65px;
+        padding: 12px 57px;
+        margin-bottom: 55px;
+    }
+    &__block {
+        position: relative;
+        width: 721px;
+        height: 114px;
+        border-radius: 10px;
+        background: rgba(#FFFFFF, .9);
+        box-shadow: 0px 4px 4px rgba(33, 94, 171, 0.7);
+        margin: 0 auto;
+        padding: 25px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 17px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 80px;
+            background:rgba(#215EAB, .8);
+            z-index: 4;
+        }
+    }
+    &__block-item {
+        display: flex;
+        align-items: center;
+    }
+    &__block-item-content {
+        width: 187px;
+        margin-left: 20px;
+    }
+    &__block-item-title {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 21px;
+        color: #215EAB;
+        text-align: left;
+    }
+    &__block-item-descr {
+        font-size: 18px;
+        line-height: 21px;
+        color: #072E52;
+        text-align: left;
+    }
+    &__image-left {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &__image-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
