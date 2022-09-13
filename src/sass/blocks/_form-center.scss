@@ -1,0 +1,99 @@
+.form-center {
+    padding: 150px 0;
+    background: url('../img/form-center/form-center.png') right bottom no-repeat;
+    &__inner {
+        width: 1396px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__descr {
+        font-family: 'Gilroy Regular', sans-serif;
+        font-size: 24px;
+        line-height: 31px;
+        color: #072E52;
+        margin-bottom: 50px;
+        max-width: 683px;
+        width: 100%;
+        &--bold {
+            font-family: 'Gilroy Bold', sans-serif;
+        }
+    }
+    &__block-blue {
+        padding: 16px 10px 13px 30px;
+        width: 634px;
+        min-height: 80px;
+        background-color: #215EAB;
+        box-shadow: 0px 4px 40px rgba(101, 60, 188, 0.1);
+        transform: skew(-7deg);
+        border-radius: 10px;
+    }
+    &__descr-blue {
+        font-size: 20px;
+        line-height: 24px;
+        color: #fff;
+        font-family: 'Raleway Extra Bold', sans-serif;
+        transform: skew(7deg);
+    }
+    &__block-red {
+        padding: 9px 24px 9px 29px;
+        width: 540px;
+        min-height: 40px;
+        background-color: #CA534B;
+        box-shadow: 0px 4px 4px rgba(186, 81, 74, 0.7);
+        transform: skew(-7deg);
+        border-radius: 10px;
+    }
+    &__descr-red {
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        font-family: 'Raleway Semibold', sans-serif;
+        transform: skew(7deg);
+    }
+    &__block {
+        width: 526px;
+        height: 561px;
+        padding: 86px 43px 86px 58px;
+        background-color: #F0F4FB;
+        border-radius: 16px;
+        text-align: center;
+    }
+    &__block-descr {
+        font-size: 28px;
+        line-height: 31px;
+        color: #072E52;
+        margin-bottom: 48px;
+        &--bold {
+            font-family: 'Raleway Extra Bold', sans-serif;
+        }
+    }
+    &__input {
+        padding: 21px 30px;
+        width: 375px;
+        height: 60px;
+        margin-bottom: 20px;
+        border: none;
+        border: 1px solid #E2E2E2;
+        border-radius: 6px;
+        font-size: 18px;
+        line-height: 21px;
+        &::placeholder {
+            color: #929292;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__button {
+        width: 375px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    &__small-text {
+        font-size: 15px;
+        line-height: 18px;
+        color: #072E52;
+    }
+}

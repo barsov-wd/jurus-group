@@ -1,0 +1,49 @@
+.when {
+    background: #F0F4FB url('../img/when/when-bg.png') top center no-repeat;
+    padding-top: 133px;
+    &__title {
+        margin-bottom: 90px;
+    }
+    &__inner {
+        width: 1338px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__inner-item {
+        padding: 22px;
+        width: 410px;
+        height: 130px;
+        background: rgba(#FFFFFF, .9);
+        box-shadow: -4px 0px 4px rgba(33, 94, 171, 0.7);
+        border-radius: 10px;
+        &--first{
+            margin-left: 22px;
+            margin-bottom: 175px;
+        }
+        &--first,
+        &--second {
+            text-align: right;
+        }
+        &--thrid {
+            margin-right: 22px;
+            margin-bottom: 175px;
+        }
+        &--thrid,
+        &--fourth {
+            text-align: left;
+        }
+    }
+    &__inner-item-icon {
+        margin-bottom: 3px;
+    }
+    &__inner-text {
+        font-size: 20px;
+        line-height: 24px;
+        color: #072E52;
+        &--bold {
+            font-family: 'Raleway Extra Bold', sans-serif;
+        }
+    }
+}

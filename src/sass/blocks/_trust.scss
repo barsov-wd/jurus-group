@@ -1,0 +1,59 @@
+.trust {
+    padding: 146px 0;
+    &__title {
+        margin-bottom: 92px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__items {
+        width: 906px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+    &__item {
+        position: relative;
+        padding: 15px 20px 15px 0;
+        display: flex;
+        align-items: flex-start;
+        width: 416px;
+        background: rgba(#FFFFFF, .9);
+        box-shadow: 4px 0px 4px rgba(33, 94, 171, 0.7);
+        border-radius: 10px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 105px;
+            height: 88px;
+            top: 16px;
+            right: 19px;
+            background: url('../img/trust/trust-item-image.png') center no-repeat;
+        }
+    }
+    &__item-content {
+        margin-left: 20px;
+    }
+    &__item-title {
+        font-size: 55px;
+        line-height: 55px;
+        color: #CA534B;
+        font-family: 'Gilroy Black', sans-serif;
+        margin: 0;
+    }
+    &__item-subtitle {
+        font-size: 28px;
+        line-height: 31px;
+        color: #BA514A;
+        font-family: 'Raleway Extra Bold';
+        margin-bottom: 13px;
+    }
+    &__item-descr {
+        font-size: 18px;
+        line-height: 21px;
+        color: #072E52;
+    }
+}

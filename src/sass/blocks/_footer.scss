@@ -1,0 +1,70 @@
+.footer {
+    padding: 36px 0;
+    background-color: #F0F4FB;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content {
+        text-align: center;
+    }
+    &__content-info {
+        width: 718px;
+    }
+    &__content-menu {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin-bottom: 48px;
+    }
+    &__content-item {
+        font-family: 'Raleway Extra Bold', sans-serif;
+        font-weight: 800;
+        color: #072E52;
+        font-size: 20px;
+        line-height: 24px;
+        margin-right: 44px;
+    }
+    &__content-info {
+        font-family: 'Raleway Semibold', sans-serif;
+        font-size: 18px;
+        line-height: 21px;
+        color: #072E52;
+        margin-bottom: 15px;
+    }
+    &__content-policy {
+        font-weight: 800;
+        text-decoration: underline;
+        color: #072E52;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &__contacts-social {
+        margin-bottom: 20px;
+    }
+    &__contacts-social-link {
+        display: inline-block;
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__contacts-phone-link {
+        position: relative;
+        font-family: 'Gilroy Bold', sans-serif;
+        font-size: 24px;
+        line-height: 29px;
+        color: #215EAB;
+        padding-left: 37px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 29px;
+            height: 29px;
+            background: url('../icons/header/icon-phone.svg') center no-repeat;
+        }
+    }
+}

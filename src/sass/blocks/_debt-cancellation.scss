@@ -1,0 +1,79 @@
+.debt-cancellation {
+    padding-top: 150px;
+    padding-bottom: 120px;
+    background: #F0F4FB url('../img/debt-cancellation/debt-cancellation-bg.png') center bottom no-repeat;
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__subtitle {
+        margin-bottom: 90px;
+    }
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__item {
+        width: 293px;
+        min-height: 295px;
+        text-align: center;
+        &--second,
+        &--fourth,
+        &--sixth {
+            margin-top: 157px;
+        }
+    }
+    &__item-title {
+        font-family: 'Raleway Extra Bold', sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        color: #072E52;
+        margin-bottom: 5px;
+    }
+    &__item-descr {
+        font-size: 18px;
+        line-height: 21px;
+        color: #072E52;
+        margin-bottom: 20px;
+    }
+    &__circle {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 117px;
+        height: 117px;
+        border-radius: 100%;
+        background: #215EAB;
+        margin: 0 auto;
+        &--red {
+            background-color: #CA534B;
+            margin-bottom: 20px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 75px;
+            height: 3px;
+            left: -64%;
+            background-color: #215EAB;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 78px;
+            height: 3px;
+            right: -67%;
+            background-color: #215EAB;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__circle-number {
+        font-size: 55px;
+        line-height: 55px;
+        color: #fff;
+        font-family: 'Gilroy Black', sans-serif;
+    }
+}

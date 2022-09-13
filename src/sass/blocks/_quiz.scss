@@ -1,0 +1,105 @@
+.quiz {
+    position: relative;
+    padding-top: 78px;
+    padding-bottom: 227px;
+    background: #f0f4fb url('../img/quiz/quiz-bg.png') right no-repeat;
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__subtitle {
+        margin-bottom: 100px;
+    }
+    &__image {
+        position: absolute;
+        right: 180px;
+        bottom: 0;
+    }
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 360px);
+        grid-gap: 20px;
+        max-width: 740px;
+        margin-bottom: 180px;
+    }
+    &__block-title {
+        color: #215EAB;
+        font-size: 35px;
+        line-height: 39px;
+        font-family: 'Gilroy Black', sans-serif;
+        margin-bottom: 60px;
+    }
+    &__radio {
+        display: none;
+        &:checked + .quiz__label__text {
+            background: #0065B1;
+            color: #fff;
+        }
+    }
+    &__input-group {
+        width: 360px;
+        height: 60px;
+    }
+    &__label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        &__text {
+            width: 100%;
+            height: 100%;
+            background: #FFFFFF;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+    }
+    &__button-group {
+        display: flex;
+        justify-content: space-between;
+        width: 508px;
+    }
+    &__button {
+        width: 244px;
+        height: 60px;
+        margin-right: 20px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    &__input {
+        width: 380px;
+        height: 60px;
+        background-color: #fff;
+        border: none;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        &::placeholder {
+            color: rgba(#000, .2)
+        }
+    }
+    &__form {
+        width: 770px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__input {
+        width: 100%;
+        height: 60px;
+        border: none;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        line-height: 22px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        &::placeholder {
+            color: #929292;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}

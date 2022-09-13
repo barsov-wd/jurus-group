@@ -1,0 +1,85 @@
+.want {
+    padding-top: 150px;
+    background: #F0F4FB url('../img/when/when-bg.png') center no-repeat;
+    &__title {
+        margin-bottom: 100px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inner-content {
+        margin-top: 25px;
+    }
+    &__inner-block-one {
+        width: 455px;
+        height: 60px;
+        background-color: #fff;
+        text-align: right;
+        padding: 18px 65px 13px 18px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-bottom: 44px;
+    }
+    &__inner-block-two {
+        padding: 17px 18px 14px 65px;
+        width: 455px;
+        height: 60px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: #215EAB;
+        border-radius: 10px;
+        margin-bottom: 44px;
+    }
+    &__inner-descr-one {
+        font-family: 'Gilroy Bold', sans-serif;
+        font-size: 24px;
+        line-height: 29px;
+        color: #215EAB;
+    }
+    &__inner-descr-two {
+        font-family: 'Gilroy Bold', sans-serif;
+        font-size: 24px;
+        line-height: 29px;
+        color: #fff;
+    }
+    &__inner-item-one {
+        position: relative;
+        width: 420px;
+        padding-right: 39px;
+        font-size: 18px;
+        line-height: 21px;
+        color: #072E52;
+        font-family: 'Raleway Semibold', sans-serif;
+        margin-bottom: 30px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 19px;
+            height: 19px;
+            top: 0;
+            right: 0;
+            background: url('../icons/want/want-icon-check.svg') center no-repeat;
+            background-size: contain;
+        }
+    }
+    &__inner-item-two {
+        position: relative;
+        width: 455px;
+        padding-left: 65px;
+        font-size: 18px;
+        line-height: 21px;
+        color: #072E52;
+        font-family: 'Raleway Semibold', sans-serif;
+        margin-bottom: 30px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 45px;
+            height: 23px;
+            top: 0;
+            left: 0;
+            background: url('../icons/want/want-icon-flag.svg') center no-repeat;
+            background-size: contain;
+        }
+    }
+}

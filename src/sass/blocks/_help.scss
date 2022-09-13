@@ -1,0 +1,77 @@
+.help {
+    position: relative;
+    padding-top: 147px;
+    background: #F0F4FB url('../img/when/when-bg.png') center no-repeat;
+    &__title {
+        margin-bottom: 85px;
+    }
+    &__items {
+        width: 1386px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__content {
+        &--first {
+            margin-top: 105px;
+            text-align: right;
+        }
+        &--second {
+            text-align: center;
+        }
+        &--thrid {
+            margin-top: 105px;
+        }
+    }
+    &__content-item {
+        padding: 22px 20px;
+        width: 293px;
+        background: rgba(#FFFFFF, .9);
+        border-radius: 10px;
+        &--first,
+        &--second {
+            box-shadow: -4px 0px 4px rgba(33, 94, 171, 0.7);
+        }
+        &--thrid {
+            box-shadow: 0px 4px 4px rgba(33, 94, 171, 0.7);
+        }
+        &--fourth,
+        &--fives {
+            box-shadow: 4px 0px 4px rgba(33, 94, 171, 0.7);
+        }
+        &--first,
+        &--second,
+        &--fourth,
+        &--fives {
+            margin-bottom: 99px;
+        }
+    }
+    &__content-descr {
+        font-family: 'Raleway Bold', sans-serif;
+        font-size: 18px;
+        line-height: 21px;
+        color: #072E52;
+    }
+    &__block {
+        width: 1620px;
+        padding: 18px 10px;
+        margin: 0 auto;
+        background-color: #215EAB;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &__block-descr {
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: 'Raleway Extra Bold', sans-serif;
+    }
+    &__image {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 60px;
+    }
+}

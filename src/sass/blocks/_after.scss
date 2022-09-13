@@ -1,0 +1,82 @@
+.after {
+    position: relative;
+    z-index: 3;
+    background: url('../img/after/after-bg.png') center left no-repeat;
+    padding-top: 179px;
+    padding-bottom: 104px;
+    &__image {
+        position: absolute;
+        bottom: 0;
+        right: 150px;
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__subtitle {
+        margin-bottom: 20px;
+    }
+    &__descr {
+        width: 878px;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #072E52;
+        margin: 0 auto 49px;
+    }
+    &__item {
+        position: relative;
+        padding: 23px 20px;
+        width: 429px;
+        background-color: rgba(#FFFFFF, .9);
+        box-shadow: -4px 4px 4px rgba(33, 94, 171, 0.7);
+        border-radius: 10px;
+        margin-bottom: 55px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &--first {
+            &::before {
+                content: '';
+                position: absolute;
+                width: 57px;
+                height: 55px;
+                top: -35px;
+                left: 20px;
+                background: url('../img/after/after-image-one.png') center no-repeat;
+                z-index: -2;
+            }
+        }
+        &--second {
+            margin-left: 247px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 57px;
+                height: 55px;
+                top: -35px;
+                left: 20px;
+                background: url('../img/after/after-image-two.png') center no-repeat;
+                z-index: -2;
+            }
+        }
+        &--thrid {
+            margin-left: 427px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 57px;
+                height: 55px;
+                top: -35px;
+                left: 20px;
+                background: url('../img/after/after-image-three.png') center no-repeat;
+                z-index: -2;
+            }
+        }
+    }
+    &__item-descr {
+        font-size: 18px;
+        line-height: 21px;
+        color: #072E52;
+        font-family: 'Raleway Semibold', sans-serif;
+    }
+}

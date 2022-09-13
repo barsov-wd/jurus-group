@@ -1,0 +1,36 @@
+.slider {
+    position: relative;
+    z-index: 2;
+    background-color: #F0F4FB;
+    padding: 150px 0;
+    &__arrows {
+        position: absolute;
+        cursor: pointer;
+        top: 60%;
+        &--prev {
+            left: 90px;
+        }
+        &--next {
+            right: 90px;
+        }
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__subtitle {
+        margin-bottom: 90px;
+    }
+    &__item {
+        position: relative;
+        width: auto;
+        text-align: center;
+    }
+    &__button {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+}
