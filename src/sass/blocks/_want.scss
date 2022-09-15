@@ -1,6 +1,9 @@
 .want {
     padding-top: 150px;
     background: #F0F4FB url('../img/when/when-bg.png') center no-repeat;
+    &__image-one {
+        display: none;
+    }
     &__title {
         margin-bottom: 100px;
     }
@@ -20,6 +23,7 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
         margin-bottom: 44px;
+        transform: skew(7deg);
     }
     &__inner-block-two {
         padding: 17px 18px 14px 65px;
@@ -29,18 +33,21 @@
         background-color: #215EAB;
         border-radius: 10px;
         margin-bottom: 44px;
+        transform: skew(-7deg);
     }
     &__inner-descr-one {
         font-family: 'Gilroy Bold', sans-serif;
         font-size: 24px;
         line-height: 29px;
         color: #215EAB;
+        transform: skew(-7deg);
     }
     &__inner-descr-two {
         font-family: 'Gilroy Bold', sans-serif;
         font-size: 24px;
         line-height: 29px;
         color: #fff;
+        transform: skew(7deg);
     }
     &__inner-item-one {
         position: relative;

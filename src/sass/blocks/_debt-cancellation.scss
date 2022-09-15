@@ -12,6 +12,9 @@
         display: flex;
         align-items: flex-start;
     }
+    &__inner-mobile {
+        display: none;
+    }
     &__item {
         width: 293px;
         min-height: 295px;
