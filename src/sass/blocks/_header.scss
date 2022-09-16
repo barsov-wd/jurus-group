@@ -5,6 +5,9 @@
         justify-content: space-between;
         align-items: center;
     }
+    &__social-mobile {
+        display: none;
+    }
     &__social-link {
         margin-left: 19px;
         &:first-child {
@@ -28,6 +31,9 @@
             background: url('../icons/header/icon-phone.svg') center no-repeat;
         }
     }
+    &__phone-link-mobile {
+        display: none;
+    }
     &__nav {
         padding: 14px 0;
         background: rgba(#215EAB, .8);
@@ -47,5 +53,8 @@
         line-height: 24px;
         font-family: 'Raleway Extra Bold', sans-serif;
         font-weight: 800;
+    }
+    .humburger {
+        display: none;
     }
 }

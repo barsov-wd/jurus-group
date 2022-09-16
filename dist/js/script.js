@@ -20,3 +20,22 @@ new Swiper('.swiper', {
         }
     }
 });
+
+// Menu
+
+const menu = document.querySelector('.header__nav'),
+    menuItem = document.querySelectorAll('.header__menu-item'),
+    humburger = document.querySelector('.humburger');
+
+    humburger.addEventListener('click', () => {
+        humburger.classList.toggle('humburger_active');
+        menu.classList.toggle('header__nav_active');
+    });
+
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            humburger.classList.toggle('humburger_active');
+            menu.classList.toggle('header__nav_active');
+        });
+    });
