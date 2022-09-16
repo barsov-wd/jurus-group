@@ -9,11 +9,13 @@
         &::before {
             content: '';
             position: absolute;
-            top: -136px;
+            top: -100px;
             left: 0;
             width: 820px;
-            height: 886px;
+            height: 500px;
             background: url('../img/form-last/form-last.png') no-repeat;
+            background-position: center center;
+            background-size: contain;
             z-index: -1;
         }
     }
