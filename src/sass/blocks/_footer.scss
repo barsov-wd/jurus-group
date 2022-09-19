@@ -19,21 +19,25 @@
         margin-bottom: 48px;
     }
     &__content-item {
-        font-family: 'Raleway Extra Bold', sans-serif;
+        font-family: 'Raleway Extra Bold', sans-serif!important;
         font-weight: 800;
         color: #072E52;
         font-size: 20px;
         line-height: 24px;
         margin-right: 44px;
     }
+    &__content-link {
+        font-family: 'Raleway Extra Bold', sans-serif!important;
+    }
     &__content-info {
-        font-family: 'Raleway Semibold', sans-serif;
+        font-family: 'Raleway Semibold', sans-serif!important;
         font-size: 18px;
         line-height: 21px;
         color: #072E52;
         margin-bottom: 15px;
     }
     &__content-policy {
+        font-family: 'Raleway Extra Bold', sans-serif!important;
         font-weight: 800;
         text-decoration: underline;
         color: #072E52;

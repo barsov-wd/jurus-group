@@ -39,3 +39,5 @@ const menu = document.querySelector('.header__nav'),
             menu.classList.toggle('header__nav_active');
         });
     });
+
+

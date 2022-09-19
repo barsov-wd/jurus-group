@@ -61,12 +61,26 @@
         transform: skew(7deg);
     }
     &__block {
+        position: relative;
         width: 526px;
         height: 561px;
         padding: 86px 43px 86px 58px;
         background-color: #F0F4FB;
         border-radius: 16px;
         text-align: center;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            filter: blur(2px);
+            width: 98%;
+            height: 98%;
+            background: rgba(#215EAB, .8);
+            border-radius: 16px;
+            z-index: -1;
+        }
     }
     &__block-descr {
         font-size: 28px;
