@@ -28,16 +28,20 @@ const menu = document.querySelector('.header__nav'),
     humburger = document.querySelector('.humburger');
 
     humburger.addEventListener('click', () => {
-        humburger.classList.toggle('humburger_active');
-        menu.classList.toggle('header__nav_active');
+       toggleMenu();
     });
 
 
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
-            humburger.classList.toggle('humburger_active');
-            menu.classList.toggle('header__nav_active');
+            toggleMenu();
         });
     });
+
+    function toggleMenu() {
+        humburger.classList.toggle('humburger_active');
+        menu.classList.toggle('header__nav_active');
+        document.body.style.overflow = menu.classList.contains('header__nav_active') ? 'hidden' : '';
+    }
 
 

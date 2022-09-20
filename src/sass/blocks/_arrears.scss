@@ -52,7 +52,7 @@
             width: 32px;
             height: 32px;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translateY(-50%) skew(7deg);
             left: -16px;
             background: url('../icons/arrears/arrears-icon-circle.svg') center no-repeat;
         }
